@@ -184,6 +184,13 @@ main {
 
 #descripcion-producto {
   margin-left: 7px;
+  opacity: 0; 
+  transition: all 400ms;
+}
+
+.container-info:hover #descripcion-producto {
+  opacity:1;
+ 
 }
 
 .footer{
@@ -225,13 +232,18 @@ main {
     left: 230px;
   }
 }
-@media (min-width:390px) and (max-width:450px) {
+@media (min-width:390px) and (max-width:750px) {
   .fa-truck {
-    left: 300px;
+    left: 100px;
   }
 }
 
-@media (min-width:1670px) {
+@media (min-width:1251px) and (max-width:1600px) {
+  .fa-truck {
+    left: 150px;
+  }
+}
+@media (min-width:16001px) {
   .fa-truck {
     left: 250px;
   }
@@ -285,9 +297,24 @@ main {
     color: #068FFF;
   }
 }
+@media (min-width:482px) and (max-width: 605px) {
+  .burger-menu {
+    display: none;
+  }
+
+  .contenido-visita, .contenido-ofertas, .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .container-product {
+    width: 100vw;
+  }
+}
 
 /* tablet */
-@media (min-width: 482px) and (max-width: 768px) {
+@media (min-width: 606px) and (max-width: 1250px) {
   .burger-menu {
     display: none;
   }
